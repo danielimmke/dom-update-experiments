@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment #3</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script type="module" src="script-3.js"></script>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      div {
+        background-color: #F1F5F9;
+        border-bottom: #CBD5E1 1px solid;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      table {
+        border: #CBD5E1 1px solid;
+        table-layout: auto;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+      thead {
+        background-color: #F1F5F9;
+      }
+      th {
+        text-align: left;
+      }
+      th, td {
+        font-weight: normal;
+        padding: 1rem;
+        border: #CBD5E1 1px solid;
+      }
+      th.sortable {
+        cursor: pointer;
+        background-color: #e2e8f0;
+      }
+      td {
+        color: #64758B;
+      }
+      p {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p>Note: Not using DOM fragments, instead manually changing the value of each cell. Causes the tab to freeze. Sorting can take up to a full minute.</p>
+    <table>
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment #0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script type="module" src="script-0.js"></script>
+    <style type="text/css">
+      th.sortable {
+        background-color: #e2e8f0; /* slate-200 */
+      }
+      th.sortable[data-sort="desc"]::after {
+        content: ' ▼';
+      }
+      th.sortable[data-sort="asc"]::after {
+        content: ' ▲';
+      }
+      p {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body class="mb-8">
+    <div class="mx-auto bg-slate-100 mb-6 p-2 text-slate-900 border-b border-slate-300"></div>
+    <p>Only rendering 500 rows, a very small subset of the data even though the entire set is loaded into the JavaScript VM. Sorting is immediate. It's clear the bottleneck is the DOM updates.</p>
+    <table class="mx-auto table-auto border-collapse border border-slate-500">
+      <thead class="bg-slate-100"></thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
